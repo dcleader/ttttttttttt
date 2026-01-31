@@ -10,4 +10,10 @@ export interface ILogger {
 	error(obj: unknown, msg?: string): void
 }
 
-export default P({ timestamp: () => `,"time":"${new Date().toJSON()}"` })
+export default P({ 
+    level: 'silent', 
+    timestamp: () => `,"time":"${new Date().toJSON()}"` 
+})
+
+
+// export default P({ timestamp: () => `,"time":"${new Date().toJSON()}"` })
